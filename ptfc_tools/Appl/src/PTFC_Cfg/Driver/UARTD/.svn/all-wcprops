@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/Driver/UARTD
+V 83
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/UARTD
 END
 UARTD_config.c
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/Driver/UARTD/UARTD_config.c
+V 98
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/UARTD/UARTD_config.c
 END
 UARTD_cfgIf.h
 K 25
 svn:wc:ra_dav:version-url
-V 76
-/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/Driver/UARTD/UARTD_cfgIf.h
+V 97
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/UARTD/UARTD_cfgIf.h
 END
 UARTD_config.h
 K 25
 svn:wc:ra_dav:version-url
-V 77
-/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/Driver/UARTD/UARTD_config.h
+V 98
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/UARTD/UARTD_config.h
 END

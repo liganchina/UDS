@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Driver/MEMD
+V 82
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/MEMD
 END
 MEMD_config.c
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Driver/MEMD/MEMD_config.c
+V 96
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/MEMD/MEMD_config.c
 END
 MEMD_cfgIf.h
 K 25
 svn:wc:ra_dav:version-url
-V 72
-/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Driver/MEMD/MEMD_cfgIf.h
+V 95
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/MEMD/MEMD_cfgIf.h
 END
 MEMD_config.h
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Driver/MEMD/MEMD_config.h
+V 96
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/MEMD/MEMD_config.h
 END

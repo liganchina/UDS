@@ -1,23 +1,23 @@
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Driver/CAND
+V 82
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/CAND
 END
 CAND_cfgIf.h
 K 25
 svn:wc:ra_dav:version-url
-V 73
-/svn/MSM_952/!svn/ver/30/trunk/Appl/src/PTFC_Cfg/Driver/CAND/CAND_cfgIf.h
+V 95
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/CAND/CAND_cfgIf.h
 END
 CAND_config.c
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Driver/CAND/CAND_config.c
+V 96
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/CAND/CAND_config.c
 END
 CAND_config.h
 K 25
 svn:wc:ra_dav:version-url
-V 75
-/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/Driver/CAND/CAND_config.h
+V 96
+/svn/MSM_952/!svn/ver/511/tags/Boot-03.02_Appl-05.00/Appl/src/PTFC_Cfg/Driver/CAND/CAND_config.h
 END
