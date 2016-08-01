@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/MOTA
+END
+MOTA.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/MOTA/MOTA.c
+END
+MOTA_Define.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/MSM_952/!svn/ver/503/trunk/Appl/src/APPL_Core/MOTA/MOTA_Define.h
+END
+MOTA.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/MOTA/MOTA.h
+END
+tl_basetypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/MOTA/tl_basetypes.h
+END
+tl_define.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/MOTA/tl_define.h
+END
+tl_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/MOTA/tl_types.h
+END

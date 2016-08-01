@@ -1,0 +1,27 @@
+#ifndef __DRVD_CFG_H
+#define __DRVD_CFG_H
+
+
+#define  DRVD_48_PIN      (48u)
+#define  DRVD_64_PIN      (64u)
+#define  DRVD_80_PIN      (80u)
+#define  DRVD_100_PIN     (100u)
+
+
+#define DRVD_UC_PACKAGE    DRVD_64_PIN
+
+/* 
+ * Driver layer modules:
+ * - ADCD
+ * - CAND
+ * - CMMD
+ * - DIOD
+ */
+#define __ADCD_IS_PRESENT__
+#define __CAND_IS_PRESENT__
+#define __CMMD_IS_PRESENT__
+#define __DIOD_IS_PRESENT__
+#define __MEMD_IS_PRESENT__
+//#define __UARTD_IS_PRESENT__
+
+#endif /* end __DRVD_CFG_H */

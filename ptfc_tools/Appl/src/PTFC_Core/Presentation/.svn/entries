@@ -1,0 +1,166 @@
+10
+
+dir
+563
+http://10.10.10.59/svn/MSM_952/trunk/Appl/src/PTFC_Core/Presentation
+http://10.10.10.59/svn/MSM_952
+
+
+
+2016-07-22T10:38:30.422599Z
+561
+fzanchetta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ee6efbb1-8d80-4383-846b-ed621e9da208
+
+AVGP
+dir
+
+DDMP
+dir
+
+DINP
+dir
+
+EEPP
+dir
+
+FUNP
+dir
+
+FVMP
+dir
+
+LINP
+dir
+
+MOTP
+dir
+
+NETP
+dir
+
+PRES.c
+file
+
+
+
+
+2016-07-21T13:35:16.307000Z
+c18966f241b6a50cff300d263f5c507d
+2016-03-30T13:46:16.340653Z
+477
+dcloralio
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14070
+
+PRES_if.h
+file
+
+
+
+
+2016-07-21T13:35:16.617000Z
+bd1982d5f259d1ac675fd1fc54719e05
+2016-03-30T13:46:16.340653Z
+477
+dcloralio
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5142
+
+PRES_typedefs.h
+file
+
+
+
+
+2016-07-21T13:35:13.489000Z
+63501674a47c7b00fa7f7abc9d26ade2
+2016-03-30T13:46:16.340653Z
+477
+dcloralio
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2262
+
+SNSP
+dir
+
+TLRP
+dir
+
+TP
+dir
+

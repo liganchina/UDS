@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/Control/IPOC
+END
+IPOC.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/230/trunk/Appl/src/PTFC_Core/Control/IPOC/IPOC.c
+END
+IPOC.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/Control/IPOC/IPOC.h
+END
+IPOC_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Core/Control/IPOC/IPOC_if.h
+END

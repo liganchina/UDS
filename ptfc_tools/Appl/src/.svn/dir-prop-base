@@ -1,0 +1,33 @@
+K 13
+svn:mergeinfo
+V 1387
+/branches/Appl_HMSM952_01.01_RC/Appl/src:105-146
+/branches/Appl_HMSM952_Alessio/Appl/src:356-405
+/branches/Appl_HMSM952_CR10360/src:543-556
+/branches/Appl_HMSM952_DISPA/src:125-151
+/branches/Appl_HMSM952_Daniele/src:204-225
+/branches/Appl_HMSM952_KitFileGenerator/Appl/src:366-388
+/branches/Appl_HMSM952_MISRA_2/Appl/src:213-229
+/branches/Appl_HMSM952_Mastrodonato/src:548-557
+/branches/Appl_HMSM952_NewPlatform/Appl/src:354-418
+/branches/Appl_HMSM952_PlatformAlignement/src:281-334
+/branches/Appl_HMSM952_Release_04.00/src:366-395
+/branches/Appl_HMSM952_Release_04.01/src:441-456,466-467
+/branches/Appl_HMSM952_Release_05.00_RC1/src:475-476
+/branches/Appl_HMSM952_Release_05.00_RC2/src:468-474,485-504
+/branches/Appl_HMSM952_Release_05.01_RC1/src:515-555
+/branches/Appl_HMSM952_Release_06.00_RC1/src:556-560
+/branches/Appl_HMSM952_TP_UDSA_PlatAlig:296-335
+/branches/Appl_HMSM952_Talarico:195-244,258-269,347-416,438-457,512-533
+/branches/Appl_HMSM952_Talarico/Appl/src:110-139
+/branches/Appl_HMSM_952_02.00:166-176
+/branches/Appl_HMSM_952_02.02:161-165
+/branches/Appl_HMSM_DTC/src:93-150
+/branches/Appl_HMSM_Release_04.00/src:427-434
+/branches/Appl_KitFileGen/Appl/src:330-333
+/branches/Boot-02.00_Appl-03.00_RC2/Appl/src:269-275
+/branches/Boot-03.00_Appl-03.01/Appl/src:339-349
+/branches/ElectronicLable:4-10
+/branches/UpdateCanMap:5-11
+/tags/Boot-02.00_Appl-03.00_RC1/Appl/src:255-268
+END

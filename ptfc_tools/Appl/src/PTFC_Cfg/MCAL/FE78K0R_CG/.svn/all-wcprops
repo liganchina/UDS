@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG
+END
+FE78K0R_CG_int.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_int.h
+END
+FE78K0R_CG_serial_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_serial_user.c
+END
+FE78K0R_CG_timer_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_timer_user.c
+END
+FE78K0R_CG_port.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_port.h
+END
+FE78K0R_CG_macrodriver.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_macrodriver.h
+END
+FE78K0R_CG_system_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_system_user.c
+END
+FE78K0R_CG_timer_user.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_timer_user.h
+END
+FE78K0R_CG_system.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_system.c
+END
+FE78K0R_CG_timer.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_timer.c
+END
+FE78K0R_CG_serial.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_serial.c
+END
+FE78K0R_CG_system.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_system.h
+END
+FE78K0R_CG_wdt.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_wdt.c
+END
+MCAL_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/MCAL_if.h
+END
+FE78K0R_CG_timer.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_timer.h
+END
+FE78K0R_CG_serial.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_serial.h
+END
+FE78K0R_CG_wdt.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_wdt.h
+END
+FE78K0R_CG_int_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_int_user.c
+END
+FE78K0R_CG_int.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_int.c
+END
+MCAL.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/MCAL.h
+END
+FE78K0R_CG_systeminit.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_systeminit.c
+END
+FE78K0R_CG_int_user.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_int_user.h
+END
+FE78K0R_CG_port.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Cfg/MCAL/FE78K0R_CG/FE78K0R_CG_port.c
+END

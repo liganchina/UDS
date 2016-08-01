@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/Driver/UARTD
+END
+UARTD_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/Driver/UARTD/UARTD_if.h
+END
+UARTD.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/Driver/UARTD/UARTD.h
+END
+UARTD.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/Driver/UARTD/UARTD.c
+END

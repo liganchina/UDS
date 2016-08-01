@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/System/LTMS
+END
+LTMS_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/System/LTMS/LTMS_config.c
+END
+LTMS_cfgIf.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/System/LTMS/LTMS_cfgIf.h
+END
+LTMS_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Cfg/System/LTMS/LTMS_config.h
+END

@@ -1,0 +1,34 @@
+10
+
+dir
+563
+http://10.10.10.59/svn/MSM_952/trunk/Appl/mbd
+http://10.10.10.59/svn/MSM_952
+
+
+
+2016-07-22T10:38:30.422599Z
+561
+fzanchetta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ee6efbb1-8d80-4383-846b-ed621e9da208
+
+APSA
+dir
+
+MOTA
+dir
+

@@ -1,0 +1,351 @@
+//-------------------------------------------------------------------------
+//      XLINK command file template for 78K0R microcontroller uPD78F1833_64.
+//
+//      This filecan be used to link object files from the 78K0R
+//      Assembler, A78K0R, and the C/C++ compiler ICC78K0R.
+//
+//          This file is generated from the device file:
+//          DF183364.78K
+//          Copyright (C) NEC Corporation 2009
+//          Format version V3.00, File version V1.01
+//-------------------------------------------------------------------------
+
+//-------------------------------------------------------------------------
+//      The following segments are defined in this template link file:
+//
+//      INTVEC      -- Interrupt vectors.
+//      CLTVEC      -- Calltable vectors.
+//      RCODE       -- Code used by C/C++ startup and run-time library.
+//      CODE        -- Code used by __non_banked, __interrupt and __callt functions.
+//      XCODE       -- Code used by __far_func functions.
+//      NEAR_CONST_ -- Constants used by __near const.
+//      FAR_CONST   -- Constants used by __far const.
+//      SADDR_x     -- Variables used by __saddr.
+//      NEAR_x      -- Variables used by __near.
+//      FAR_x       -- Variables used by __far.
+//      NEAR_HEAP   -- The heap used by near data model.
+//      FAR_HEAP    -- The heap used by far data model.
+//      SWITCH      -- Switch tables used by near code model.
+//      FSWITCH     -- Switch tables used by near far model.
+//      DIFUNCT     -- Dynamic initialization vector used by C++
+//
+//      Where _x could be one of:
+//
+//      _Z      -- Initialized data (initvalue = 0 or without init value).
+//      _I      -- Initialized data (initvalue != 0).
+//      _ID     -- The inial values of _I.
+//      _N      -- Uninitialized data, used by __no_init.
+//-------------------------------------------------------------------------
+
+//*************************************************************************
+//*************************************************************************
+// Author: Carmine Celozzi - CC
+// Platform version: v1.0
+// Projects: MSM model X, NAG/NAP Ferrari
+// Micro: 78K0R microcontroller uPD78F1833_64
+// 
+// Initials     Name                      Company
+// --------     ---------------------     ---------------------------------
+// CC           Carmine Celozzi           Akhela S.r.l.
+// ------------------------------------------------------------------------
+// MM           Matteo Mastrodonato       Bitron S.p.A.
+// ------------------------------------------------------------------------
+// FRAT         Francesco Talarico        Bitron S.p.A.
+// ------------------------------------------------------------------------
+//               R E V I S I O N   H I S T O R Y
+// ------------------------------------------------------------------------
+// Date       Ver  Author  Description
+// ---------  ---  ------  ------------------------------------------------
+// 27/02/2015 1.1  MM      - Modified for uC uPD78F1832_64, project MSM 952.
+// 23/06/2015 2.0  FRAT    - Modified for uC uPD78F1833_64, project MSM 952.
+//                         - Inserted new section KIT_FILE_CONST containing
+//                           identification data for kit file generation.
+//*************************************************************************
+//*************************************************************************
+
+//-------------------------------------------------------------------------
+//      Define CPU
+//-------------------------------------------------------------------------
+-c78000
+
+//***********************************************************************//
+//******************    F L A S H - M A P P I N G    ********************//
+//***********************************************************************//
+
+//-----------------------------------------------------------------------//
+//----------------- C O N S T - S E C T I O N ---------------------------//
+//-----------------------------------------------------------------------//
+
+//*****************************************************//
+// CC - WARNING: MUST BE SELECTED the ROM AREA 0.      //
+//      The CONST location must be ALLOCATED from      //
+//      0x1000 to 0x0BEFF because the relative         //
+//      copy in RAM MUST BE INSERTED in Mirror ROM     //
+//      that start for all 78K0R family micros from    //
+//      address 0xF1000.                               //
+//      In the applicative case the allocation must    //
+//      start where start the applicative flash area.  //
+//      The upper limit isn't configurable because     //
+//      it's fixed to 0x0BEFF. This address is the     //
+//      lower one beetwen all micros of 78K0R family.  //
+//*****************************************************//
+-DMY_CONST_LOCATION_END=0BEFF
+
+//-----------------------------------------------------------------------//
+//----------------- C F G - S E C T I O N -------------------------------//
+//-----------------------------------------------------------------------//
+
+//*****************************************************//
+// CC - THIS AREA MUST BE USED ONLY FOR FCA CUSTOMER   //
+// To generate the different kit file must changes     //
+// some RDI. The Kit file generator tool need for      //
+// access to a specific flash area to change this RDIs //
+// The area reserved has a size of 240 bytes.          //
+// The first 16 bytes are reserved for jump area.      //
+//*****************************************************//
+-D_KIT_FILE_START=07810
+-D_KIT_FILE_END=078FF
+
+//*****************************************************//
+// CC - Applicative code start at 0x7900 because       //
+//      must reserve 30 KB of code flash for the BOOT. //
+//    - The firs 0x100 flash is used by jump area and  //
+//      area dedicated for Kit file gegenration.       //
+//    - Applicative code end at 1FBFF because at addr  //
+//      1FBFE for 2 bytes there is the checksum and at //
+//      1FC00 there is a reserved area for Minicube.   //
+//*****************************************************//
+-D_FLASH_APPL_START=07900
+-D_FLASH_APPL_END=1FBFF
+
+//-------------------------------------------------------------------------
+//      Near constant location.
+//      0 -> Mirrored in rom area 0x00000 - 0x0FFFF
+//      1 -> Mirrored in rom area 0x10000 - 0x1FFFF
+//      2 -> Writeable constants
+//      Remove comments and modify number if used from command line.
+//-------------------------------------------------------------------------
+//*****************************************************//
+// CC - WARNING: MUST BE SELECTED the ROM AREA 0.      //
+//      The CONST location must be ALLOCATED from      //
+//      0x1000 to 0x0BEFF because the relative         //
+//      copy in RAM MUST BE INSERTED in Mirror ROM     //
+//      that start for all 78K0R family micros from    //
+//      address 0xF1000.                               //
+//      In the applicative case the allocation must    //
+//      start where start the applicative flash area.  //
+//      The upper limit isn't configurable because     //
+//      it's fixed to 0x0BEFF. This address is the     //
+//      lower one beetwen all micros of 78K0R family.  //
+//*****************************************************//
+-DMY_CONST_LOCATION_START=_FLASH_APPL_START
+
+//------------------- E N D - C F G - S E C T I O N ---------------------//
+
+//-------------------------------------------------------------------------
+//      Allocate the read only segments that are mapped to ROM.
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//      Interrupt vector segment.
+//-------------------------------------------------------------------------
+-Z(CODE)INTVEC=00000-0007F
+
+//-------------------------------------------------------------------------
+//      CALLT vector segment.
+//-------------------------------------------------------------------------
+-Z(CODE)CLTVEC=00080-000BD
+
+//-------------------------------------------------------------------------
+//      OPTION BYTES segment.
+//-------------------------------------------------------------------------
+-Z(CODE)OPTBYTE=000C0-000C3
+
+//-------------------------------------------------------------------------
+//      SECURITY_ID segment.
+//-------------------------------------------------------------------------
+-Z(CODE)SECUID=000C4-000CD
+
+//-------------------------------------------------------------------------
+//      Reserved ROM areas for Minicube Firmware: 000CE-000D7
+//                                                1FC00-1FFFF
+//-------------------------------------------------------------------------
+-Z(CODE)OCNIROM1=000CE-000D7
+-Z(CODE)OCNIROM2=1FC00-1FFFF
+
+//-------------------------------------------------------------------------
+// Segment for allocation of the RDIs for Kit file
+//-------------------------------------------------------------------------
+//***********************************************************************//
+//***********************************************************************//
+// !!!!!!!! ------> W A R N I N G - W A R N I N G <-------- !!!!!!!!!!!! //
+// !!!!!!!! THIS SEGMENT MUST BE THE FIRST TO USE IN THE    !!!!!!!!!!!! //
+// !!!!!!!! APPLICATIVE AREA ---> NOT MOVE IT <---          !!!!!!!!!!!! //
+// !!!!!!!! ------> W A R N I N G - W A R N I N G <-------- !!!!!!!!!!!! //
+//***********************************************************************//
+//***********************************************************************//
+-Z(CONST)KIT_FILE_CONST=_KIT_FILE_START-_KIT_FILE_END
+
+//*****************************************************//
+// CC - WARNING: INSERTED HERE ALL CONST LOCATION      //
+//      to secure the correct copy in Mirro ROM 0      //
+//*****************************************************//
+//***********************************************************************//
+//***********************************************************************//
+// !!!!!!!! ------> W A R N I N G - W A R N I N G <-------- !!!!!!!!!!!! //
+// !!!!!!!! THIS SETTING MUST BE THE SECOND TO USE IN THE   !!!!!!!!!!!! //
+// !!!!!!!! APPLICATIVE AREA.   ---> NOT MOVE IT <---       !!!!!!!!!!!! //
+// !!!!!!!! ------> W A R N I N G - W A R N I N G <-------- !!!!!!!!!!!! //
+//***********************************************************************//
+//***********************************************************************//
+-Z(CONST)NEAR_CONST=MY_CONST_LOCATION_START-MY_CONST_LOCATION_END
+-Z(CODE)FSL_UCOD,FSL_CNST=MY_CONST_LOCATION_START-MY_CONST_LOCATION_END
+
+//-------------------------------------------------------------------------
+//      Data initializer segments. 
+//-------------------------------------------------------------------------
+-Z(CONST)SADDR_ID=[MY_CONST_LOCATION_START-MY_CONST_LOCATION_END]/10000
+-Z(CONST)NEAR_ID=[MY_CONST_LOCATION_START-MY_CONST_LOCATION_END]/10000
+-Z(CONST)DIFUNCT=[MY_CONST_LOCATION_START-MY_CONST_LOCATION_END]/10000
+
+//-------------------------------------------------------------------------
+//      Constant segments 
+//-------------------------------------------------------------------------
+-Z(CONST)SWITCH,FAL_CNST,EEL_CNST=MY_CONST_LOCATION_START-MY_CONST_LOCATION_END
+-P(CONST)FAR_CONST,FSWITCH=[MY_CONST_LOCATION_START-MY_CONST_LOCATION_END]/10000
+
+//-------------------------------------------------------------------------
+//      Startup, Runtime-library, Near, Interrupt 
+//      and CALLT functions code segment.
+//-------------------------------------------------------------------------
+-Z(CODE)RCODE,FSL_CODE,CODE,FAL_CODE,EEL_CODE=_FLASH_APPL_START-_FLASH_APPL_END
+
+//-------------------------------------------------------------------------
+//      Far functions code segment.
+//-------------------------------------------------------------------------
+-P(CODE)XCODE=[_FLASH_APPL_START-_FLASH_APPL_END]/10000
+
+//--------------------------------------------------------------------------
+// Allocate CHECKSUM segment. Set address to end of code memory area.
+//--------------------------------------------------------------------------
+-Z(CODE)CHECKSUM#_FLASH_APPL_END
+
+
+//***********************************************************************//
+//********************     R A M - M A P P I N G    *********************//
+//***********************************************************************//
+
+//-----------------------------------------------------------------------//
+//----------------- C F G - S E C T I O N -------------------------------//
+//-----------------------------------------------------------------------//
+
+//*****************************************************//
+// CC - The RAM variable section can end at max at     //
+//      addr FFE1F because at addr FFE20 is allocated  //
+//      the SADDR section.                             //
+//*****************************************************//
+//-------------------------------------------------------------------------
+// Start address of uC RAM
+//-------------------------------------------------------------------------
+-D_RAM_START=FDF00
+-D_RAM_END=FFE1F
+
+//-------------------------------------------------------------------------
+//      ISR lookup table - (65 interrupt vector * 4 bytes: 260 bytes)
+//-------------------------------------------------------------------------
+-D_ISR_CBK_START=_RAM_START
+-D_ISR_CBK_END=FE003
+
+//-------------------------------------------------------------------------
+// CSTACK size max = 512 bytes --> WARNING: this value must be greater
+// then that one configured in the IDE
+//-------------------------------------------------------------------------
+-D_STACK_START=FE004
+-D_STACK_END=FE203
+
+//-------------------------------------------------------------------------
+// Generic RAM data area
+//-------------------------------------------------------------------------
+-D_RAM_DATA_START=FE204
+-D_RAM_DATA_END=FFE0F
+
+//-------------------------------------------------------------------------
+// Shared RAM between Application and Bootloader.
+//-------------------------------------------------------------------------
+-D_SHARED_RAM_START=FFE10
+
+//------------------- E N D - C F G - S E C T I O N ---------------------//
+
+
+//-------------------------------------------------------------------------
+//      ISR lookup table - (65 interrupt vector * 4 bytes: 260 bytes)
+//-------------------------------------------------------------------------
+-Z(DATA)ISR_CBK=_ISR_CBK_START-_ISR_CBK_END
+
+//-------------------------------------------------------------------------
+//      Stack segment. Added safety area at top and bottom of stack, used 
+//      to detect overflow/underflow.
+//-------------------------------------------------------------------------
+// CC - Dedicated stack area: 512 bytes
+-Z(DATA)STACK_TOP,CSTACK+_CSTACK_SIZE,STACK_BOTTOM=_STACK_START-_STACK_END
+
+//-------------------------------------------------------------------------
+//      Far data segments.
+//      The FAR_I and FAR_ID segments must start at the same offset
+//      in a 64 Kb page.
+//-------------------------------------------------------------------------
+// CC - This section is not used because the "Data Model" are managed by
+// NEAR area. This setting is done by IDE configuration.
+//-D_FAR_ID_START=0E204
+//-Z(CONST)FAR_ID=[_FAR_ID_START-_FLASH_APPL_END]/10000
+//-Z(DATA)FAR_I=[_RAM_DATA_START-_RAM_DATA_END]/10000
+
+//-------------------------------------------------------------------------
+//      Near data segments.
+//-------------------------------------------------------------------------
+-Z(DATA)NEAR_I,NEAR_Z,NEAR_N,EEL_DATA=_RAM_DATA_START-_RAM_DATA_END
+-Z(DATA)EEL_UDAT,FSL_DATA,FSL_UDAT=_RAM_DATA_START-_RAM_DATA_END
+
+//-------------------------------------------------------------------------
+//      Far data segments.
+//-------------------------------------------------------------------------
+-Z(DATA)FAR_Z=[_RAM_DATA_START-_RAM_DATA_END]/10000
+-P(DATA)FAR_N=[_RAM_DATA_START-_RAM_DATA_END]/10000
+
+//-------------------------------------------------------------------------
+//      Heap segments.
+//-------------------------------------------------------------------------
+-Z(DATA)NEAR_HEAP+_NEAR_HEAP_SIZE=_RAM_DATA_START-_RAM_DATA_END
+-Z(DATA)FAR_HEAP+_FAR_HEAP_SIZE=[_RAM_DATA_START-_RAM_DATA_END]/10000
+
+//-------------------------------------------------------------------------
+//      Shared RAM between Application and Bootloader.
+//-------------------------------------------------------------------------
+-Z(DATA)SHARED_RAM=[_SHARED_RAM_START-_RAM_END]/10000
+
+//-------------------------------------------------------------------------
+//      Short address data and workseg segments.
+//-------------------------------------------------------------------------
+-Z(DATA)WRKSEG=FFE20-FFEDF
+-Z(DATA)SADDR_I,SADDR_Z,SADDR_N,FAL_DATA,EEL_SDAT=FFE20-FFEDF
+
+//-------------------------------------------------------------------------
+//      Allocate the read/write segments that are mapped to RAM.
+//-------------------------------------------------------------------------
+//-------------------------------------------------------------------------
+//      EEPROM segment.
+//      Note: This segment will not be automatically created
+//            and it will not be initialised by CSTARTUP!
+//-------------------------------------------------------------------------
+-Z(DATA)EEPROM=E9800-ED7FF
+
+//-------------------------------------------------------------------------
+//      RAM segment used to manage CAN RX/TX buffers
+//      Note: This segment will not be automatically created and 
+//            it will not be initialised by standard CSTARTUP!
+//-------------------------------------------------------------------------
+-Z(DATA)CAN_RAM=F0600-F06FF         //AFCAN RAM area
+
+
+//-------------------------------------------------------------------------
+//      End of File
+//-------------------------------------------------------------------------

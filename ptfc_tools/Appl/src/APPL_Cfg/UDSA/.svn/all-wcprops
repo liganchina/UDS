@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Cfg/UDSA
+END
+UDSA_RtnConfig.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/503/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_RtnConfig.c
+END
+UDSA_IocConfig.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/152/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_IocConfig.c
+END
+UDSA_cbk.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MSM_952/!svn/ver/12/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_cbk.h
+END
+UDSA_DtcConfig.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_DtcConfig.c
+END
+UDSA_cfgIf.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MSM_952/!svn/ver/336/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_cfgIf.h
+END
+UDSA_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_config.c
+END
+UDSA_RdiConfig.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_RdiConfig.c
+END
+UDSA_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Cfg/UDSA/UDSA_config.h
+END

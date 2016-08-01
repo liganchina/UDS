@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Control/PWMC
+END
+PWMC.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Control/PWMC/PWMC.c
+END
+PWMC.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Control/PWMC/PWMC.h
+END
+PWMC_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Control/PWMC/PWMC_if.h
+END

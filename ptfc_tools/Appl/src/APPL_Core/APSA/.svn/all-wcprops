@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA
+END
+APSA.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA/APSA.c
+END
+tl_defines_APSA.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA/tl_defines_APSA.h
+END
+APSA.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA/APSA.h
+END
+tl_basetypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA/tl_basetypes.h
+END
+tl_types.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA/tl_types.h
+END
+APSA_Config.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/APPL_Core/APSA/APSA_Config.h
+END

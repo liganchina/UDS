@@ -1,0 +1,98 @@
+10
+
+dir
+563
+http://10.10.10.59/svn/MSM_952/trunk/Appl/src/PTFC_Cfg/Presentation
+http://10.10.10.59/svn/MSM_952
+
+
+
+2016-07-22T10:38:30.422599Z
+561
+fzanchetta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ee6efbb1-8d80-4383-846b-ed621e9da208
+
+AVGP
+dir
+
+DDMP
+dir
+
+DINP
+dir
+
+EEPP
+dir
+
+FUNP
+dir
+
+FVMP
+dir
+
+LINP
+dir
+
+MOTP
+dir
+
+NETP
+dir
+
+PRES_cfg.h
+file
+
+
+
+
+2016-07-21T13:35:44.418000Z
+b18eadead8a550ea720b0538fb73fc2a
+2015-07-15T14:58:44.091959Z
+98
+dcloralio
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+543
+
+SNSP
+dir
+
+TLRP
+dir
+
+TP
+dir
+

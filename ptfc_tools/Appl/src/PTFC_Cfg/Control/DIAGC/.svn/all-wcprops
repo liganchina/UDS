@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/MSM_952/!svn/ver/230/trunk/Appl/src/PTFC_Cfg/Control/DIAGC
+END
+DIAGC_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Control/DIAGC/DIAGC_config.h
+END
+DIAGC_cfgIf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MSM_952/!svn/ver/3/trunk/Appl/src/PTFC_Cfg/Control/DIAGC/DIAGC_cfgIf.h
+END
+DIAGC_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/MSM_952/!svn/ver/230/trunk/Appl/src/PTFC_Cfg/Control/DIAGC/DIAGC_config.c
+END

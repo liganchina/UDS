@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Driver
+END
+DRVD.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MSM_952/!svn/ver/338/trunk/Appl/src/PTFC_Core/Driver/DRVD.c
+END
+cstartup.s26
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Driver/cstartup.s26
+END
+DRVD_typedefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Driver/DRVD_typedefs.h
+END
+intrinsics.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/Driver/intrinsics.h
+END
+DRVD_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MSM_952/!svn/ver/338/trunk/Appl/src/PTFC_Core/Driver/DRVD_if.h
+END

@@ -1,0 +1,8 @@
+K 13
+svn:externals
+V 401
+http://10.10.10.59/svn/MSM_952/trunk/Tools/KitFileGenerator/KitFileGenerator/bin/Release/KitFileConfiguration.ini KitFileConfiguration.ini
+http://10.10.10.59/svn/MSM_952/trunk/Tools/KitFileGenerator/KitFileGenerator/bin/Release/KitFileGenerator.bat KitFileGenerator.bat
+http://10.10.10.59/svn/MSM_952/trunk/Tools/KitFileGenerator/KitFileGenerator/bin/Release/KitFileGenerator.exe KitFileGenerator.exe
+
+END

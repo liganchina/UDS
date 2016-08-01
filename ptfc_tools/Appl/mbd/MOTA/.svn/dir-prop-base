@@ -1,0 +1,7 @@
+K 13
+svn:externals
+V 163
+-r 552 http://10.10.10.59/svn/ModelBasedDesign/HMSM_952/trunk/MOTA_model MOTA_model
+-r 26 http://10.10.10.59/svn/ModelBasedDesign/HMSM_952/trunk/MOTA_doc MOTA_doc
+
+END

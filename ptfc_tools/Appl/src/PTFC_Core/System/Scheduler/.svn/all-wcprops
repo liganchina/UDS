@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/System/Scheduler
+END
+scheduler.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/System/Scheduler/scheduler.c
+END
+scheduler.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/System/Scheduler/scheduler.h
+END
+scheduler_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/System/Scheduler/scheduler_if.h
+END

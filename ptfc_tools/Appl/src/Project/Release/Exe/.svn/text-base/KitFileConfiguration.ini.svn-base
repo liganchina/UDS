@@ -1,0 +1,210 @@
+﻿/***********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!               << Start instructions area >>                   DO NOT CHANGE THIS COMMENT!
+ ***********************************************************************************************************************
+ |---------------------------------------------------------------------------------------------------------------------|
+ |F_NAME         : KitFileConfiguration.ini                                                                            |
+ |F_PURPOSE      : Configuration file for KitFileGenerator tool                                                        |
+ |F_CREATED_BY   : Giuseppe Barberio                                                                                   |
+ |F_CREATION_DATE: 26 october 2015                                                                                     |
+ |F_INI_VERSION  : 01.00                                                                                               |
+ |CHANGE_LOG:                                                                                                          |
+ |- 01.00: added the description for all fields. Redmine #2083, #2084                                                  |
+ |- 01.01: added parameter HFI and its description. Redmine #2323, #2324                                               |
+ |---------------------------------------------------------------------------------------------------------------------|
+ 
+ 
+ |----------------------------------------------- USER INSTRUCTIONS ---------------------------------------------------|
+ 
+ |=============================================== !!! WARNING !!! =====================================================|
+ | The KitFileGenerator can generate one or more KIT files depending on the instructions inserted.                     |
+ | Remember that the following fields: SEED_AND_KEY_TYPE, FOLDER_NAME, FILE_NAME and NODE_ADDR must be equal.          |
+ | If one SEED_AND_KEY_TYPE                                                                                            |
+ | is declared than one FOLDER_NAME, one FILE_NAME and one NODE_ADDR must be declared otherwise no correct kit files   |
+ | generation is guaranteed.                                                                                           |
+ | If two SEED_AND_KEY_TYPE is declared than two FOLDER_NAME, two FILE_NAME and two NODE_ADDR must be declared         |
+ | otherwise no correct kit files generation is guaranteed.                                                            |
+ | ...and so on.                                                                                                       |
+ |---------------------------------------------------------------------------------------------------------------------|
+
+ |=============================================== LABEL MEANING =======================================================|
+ |  LABEL                        | DESCRIPTION                                                                         |
+ |-------------------------------|-------------------------------------------------------------------------------------|
+ | SHOW_VER                      | Show KitFileGenerator tool version if set to YES                                    |
+ | HFI                           | HFI parameter (Header Format Identifier)                                            |
+ | SW_COMP                       | Prevoius software versions compliant with the current one                           |
+ | SEED_AND_KEY_TYPE             | Seed and Key type for security access before to start with download procedure       |
+ | FOLDER_NAME                   | Name that will be assigned to folder containing the kit files                       |
+ | FILE_NAME                     | Name that will be assigned to each kit file                                         |
+ | NODE_ADDR                     | Node address assigned to ECU on which the download will be executed                 |
+ | START_FLASH_ADDR              | Flash start address for application software                                        |
+ | STOP_FLASH_ADDR_PROGRAM       | Flash end address for application software                                          |
+ | STOP_FLASH_ADDR_CRC           | Cyclic redundancy check calculated on range [START_FLASH_ADDR;                      |
+ |                               | STOP_FLASH_ADDR_PROGRAM - 4 byte]                                                   |
+ | STOP_FLASH_ADDR_ERASE         | The end address to which the flash erase will be executed during download process   |
+ |---------------------------------------------------------------------------------------------------------------------|
+ 
+ 
+ |=============================================== EXAMPLE OF USE AND MISUSE ===========================================|
+ |- SHOW_VER: is used to show the version of KitFileGenerator tool at the end of kit file generation.                  |
+ |            Two values are possible, the other values are ignored and tool version will be not shown.                |
+ |            If value is wrongly inserted tool version will be not shown.                                             |
+ |            Possible values are:                                                                                     |
+ |            - YES: KitFileGenerator tool version is shown                                                            |
+ |            - NOT: KitFileGenerator tool version is not shown                                                        |
+ |                                                                                                                     |
+ |            Example of use and misuse                                                                                |
+ |            The declaration "SHOW_VER=YES"  is right.                                                                |
+ |            The declaration "SHOW_VER=NOT"  is right.                                                                |
+ |            The declaration "SHOW_VER=NO"   is wrong.                                                                |
+ |            The declaration "SHOW_VER= NOT" is wrong.                                                                |
+ |            The declaration "SHOW_VER=YES " is wrong.                                                                |
+ |            The declaration "SHOW_VER= YES" is wrong.                                                                |
+ |            etc.....	                                                                                               |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- HFI: HFI parameter (Header Format Identifier)                                                                      |
+ |       This parameter identifies the of connection for download process as per the following table:                  |
+ |       Hex Value Definition                                                                                          |
+ |       01	       Download on K line, KWP (standard 07223)                                                            |
+ |       02	       Download on B CAN 11, KWP (standard 07274)                                                          |
+ |       03	       Download on K line, (standard 07209)                                                                |
+ |       04	       Download on B CAN 29 possibility to use High or Normal priority CAN IDs                             |
+ |       05	       Download on C1 CAN 29 possibility to use High or Normal priority CAN IDs                            |
+ |       06	       Download on B CAN 29 possibility to use only Normal priority CAN IDs                                |
+ |       07	       Download on C1 CAN 29 possibility to use only Normal priority CAN IDs                               |
+ |       08	       Download on C CAN, KWP (standard 07223 – I SUV)                                                     |
+ |       09	       Download on C CAN, UDS 11 bit                                                                       |
+ |       0A	       Download on C2 CAN 29 possibility to use High or Normal priority CAN IDs                            |
+ |       0B	       Download on C2 CAN 29 possibility to use only Normal priority CAN IDs                               |
+ |       0C	       Download on BH CAN 29 possibility to use High or Normal priority CAN IDs                            |
+ |       0D	       Download on BH CAN 29 possibility to use only Normal priority CAN IDs                               |
+ |       0E-FF	   Reserved                                                                                            |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- SW_COMP: Software compatibility is constituted of two parts                                                        |
+ |           - Software number (11 byte ASCII format)                                                                  |
+ |           - Software version number (2 byte UNSIGNED format)                                                        |
+ |           Software number and software version number are separated by comma.                                       |
+ |           Two or more SW_COMP are separated by  semicolon.                                                          |
+ |           - ATTENTION: more SW_COMP must be declared from the older one to the newer one                            |
+ |                                                                                                                     |
+ |           Example with noone SW_COMP                                                                                |
+ |           The declaration "SW_COMP="  is right.                                                                     |
+ |           The declaration "SW_COMP= " is wrong.                                                                     |
+ |           The declaration "SW_COMP=;" is wrong.                                                                     |
+ |                                                                                                                     |
+ |           Example with one SW_COMP                                                                                  |
+ |           We suppose                                                                                                |
+ |           SW_COMP1 --> Software number = 04440007300  Sotware version number = 0100                                 |
+ |           The declaration "SW_COMP=04440007300,0100;" is right.                                                     |
+ |                                                                                                                     |
+ |           Example with two SW_COMP                                                                                  |
+ |           We suppose                                                                                                |
+ |           SW_COMP1 --> Software number = 04440007300  Sotware version number = 0100                                 |
+ |           SW_COMP2 --> Software number = 04440007300  Sotware version number = 0200                                 |
+ |           The declaration "SW_COMP=04440007300,0100;04440007300,0200;" is right.                                    |
+ |           The declaration "SW_COMP=04440007300,0200;04440007300,0100;" is wrong.(note that older release is declared|  
+ |                                                                                  before new one)                    |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- SEED_AND_KEY_TYPE: is the type of seed and key assigned by client to supplier                                      |
+ |                     - Seed and Key type (1 byte hex format)                                                         |
+ |                     Seed and Key type must be followed by a semicolon.                                              |
+ |                                                                                                                     |
+ |                     Example                                                                                         |
+ |                     The declaration "SEED_AND_KEY_TYPE="      is wrong.                                             |
+ |                     The declaration "SEED_AND_KEY_TYPE= "     is wrong.                                             |
+ |                     The declaration "SEED_AND_KEY_TYPE=;"     is wrong.                                             |
+ |                     The declaration "SEED_AND_KEY_TYPE=0xAA;" is right.                                             |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- FOLDER_NAME: is the name that will be assigned to the folder containing the kit files.                             |
+ |               - Folder name is a string with no lenght limit                                                        |
+ |                                                                                                                     |
+ |               The number of Folder name declared must be equal to the number of file name declared,                 |
+ |               otherwise no correct kit files generation is guaranteed.                                              |
+ |               Two or more FOLDER_NAME must be separated by semicolon.                                               |
+ |               If no Folder name will be declared an error occurs and kit files will be not generated.               |
+ |                                                                                                                     |
+ |               Example with noone FOLDER_NAME (not permitted)                                                        |
+ |               The declaration "FOLDER_NAME="  is wrong.                                                             |
+ |               The declaration "FOLDER_NAME= " is wrong.                                                             |
+ |               The declaration "FOLDER_NAME=;" is wrong.                                                             |
+ |                                                                                                                     |
+ |               Example with one FOLDER_NAME                                                                          |
+ |               The declaration "FOLDER_NAME=F151M_NAG_0201;" is right.                                               |
+ |               The declaration "FOLDER_NAME=F151M_NAG_0201"  is wrong.                                               |
+ |                                                                                                                     |
+ |               Example with two FOLDER_NAME                                                                          |
+ |               The declaration "FOLDER_NAME=F151M_NAG_0201;F151M_NAP_0201;" is right.                                |
+ |               The declaration "FOLDER_NAME=F151M_NAG_0201,F151M_NAP_0201;" is wrong.                                |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- FILE_NAME: is the name of filename.bin generated by compiler e processed by KitFileGenerator to generate kit files |
+ |               - The FILE_NAME is in ASCII format and its length must be equal to 8 bytes                            |
+ |                                                                                                                     |
+ |               The number of Folder name declared must be equal to the number of file name declared,                 |
+ |               otherwise no correct kit files generation is guaranteed.                                              |
+ |               Two or more FILE_NAME must be separated by semicolon.                                                 |
+ |               If no FILE_NAME name will be declared an error occurs and kit files will be not generated.            |
+ |                                                                                                                     |
+ |               Example with noone FILE_NAME (not permitted)                                                          |
+ |               The declaration "FILE_NAME="  is wrong.                                                               |
+ |               The declaration "FILE_NAME= " is wrong.                                                               |
+ |               The declaration "FILE_NAME=;" is wrong.                                                               |
+ |                                                                                                                     |
+ |               Example with one FILE_NAME                                                                            |
+ |               The declaration "FILE_NAME=BIC20200;"  is right.                                                      |
+ |               The declaration "FILE_NAME=BIC20200"   is wrong.                                                      |
+ |               The declaration "FILE_NAME=BIC202000;" is wrong (note that byte lenght is greater than 8)             |
+ |                                                                                                                     |
+ |               Example with two FILE_NAME                                                                            |
+ |               The declaration "FILE_NAME=BIC20200;BIC20300;" is right.                                              |
+ |               The declaration "FILE_NAME=BIC20200,BIC20300;" is wrong.                                              |
+ |               The declaration "FILE_NAME=BIC20200,BIC20300"  is wrong.                                              |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- NODE_ADDR: is the list of node address.                                                                            |
+ |             - node address is a 1 byte hex format                                                                   |
+ |                                                                                                                     |
+ |             The number of node address declared must be equal to the number of file name declared,                  |
+ |             otherwise no correct kit files generation is guaranteed.                                                |
+ |             Two or more NODE_ADDR must be separated by semicolon.                                                   |
+ |               If no node address will be declared an error occurs and kit files will be not generated.              |
+ |                                                                                                                     |
+ |             Example with noone NODE_ADDR (not permitted)                                                            |
+ |             The declaration "NODE_ADDR="  is wrong.                                                                 |
+ |             The declaration "NODE_ADDR= " is wrong.                                                                 |
+ |             The declaration "NODE_ADDR=;" is wrong.                                                                 |
+ |                                                                                                                     |
+ |             Example with one NODE_ADDR                                                                              |
+ |             The declaration "NODE_ADDR=0x1A;" is right.                                                             |
+ |             The declaration "NODE_ADDR=0x1A"  is wrong.                                                             |
+ |                                                                                                                     |
+ |             Example with two NODE_ADDR                                                                              |
+ |             The declaration "NODE_ADDR=0x1A;0x9B;" is right.                                                        |
+ |             The declaration "NODE_ADDR=0x1A;0x9B"  is wrong.                                                        |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- START_FLASH_ADDR: flash start address for application software.                                                    |
+ |                    Only one value must be declared otherwise no correct kit files generation is guaranteed.         |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- STOP_FLASH_ADDR_PROGRAM: flash end address for application software.                                               |
+ |                          Only one value must be declared otherwise no correct kit files generation is guaranteed.   |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- STOP_FLASH_ADDR_CRC:Cyclic redundancy check calculated on range[START_FLASH_ADDR; STOP_FLASH_ADDR_PROGRAM - 4 byte]|
+ |                      Only one value must be declared otherwise no correct kit files generation is guaranteed.       |
+ |---------------------------------------------------------------------------------------------------------------------|
+ |- STOP_FLASH_ADDR_ERASE: the end address to which the flash erase will be executed during download process.          |
+ |                        Only one value must be declared otherwise no correct kit files generation is guaranteed.     |
+ |---------------------------------------------------------------------------------------------------------------------|
+  
+ ***********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!               << End instruction area >>                      DO NOT CHANGE THIS COMMENT!
+ **********************************************************************************************************************/
+ SHOW_VER=NOT
+ HFI=0x0C;
+ SW_COMP=04.00      ,0001;04.01_RC1  ,0001;05.00_RC1  ,0001;05.00_RC2  ,0001;05.00      ,0001;
+ SEED_AND_KEY_TYPE=0x5A;
+ FOLDER_NAME=HMSM_952_0600;
+ FILE_NAME=BIC20600;
+ NODE_ADDR=0xC2;
+ START_FLASH_ADDR=0x007800;
+ STOP_FLASH_ADDR_PROGRAM=0x01FBFF;
+ STOP_FLASH_ADDR_CRC=0x01FBFF;
+ STOP_FLASH_ADDR_ERASE=0x01FFFF;
+ 
+ 

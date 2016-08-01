@@ -1,0 +1,77 @@
+10
+
+dir
+563
+http://10.10.10.59/svn/MSM_952/trunk/Appl/src/PTFC_Cfg/System
+http://10.10.10.59/svn/MSM_952
+
+
+
+2016-07-22T10:38:30.422599Z
+561
+fzanchetta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ee6efbb1-8d80-4383-846b-ed621e9da208
+
+ECUIDS
+dir
+
+LPMS
+dir
+
+LTMS
+dir
+
+SCHDS
+dir
+
+SYSM_cfg.h
+file
+
+
+
+
+2016-07-21T13:35:31.786000Z
+3939c9b529e21182dc0463545349954e
+2015-10-27T10:52:05.163370Z
+335
+dcloralio
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+161
+
+TASK
+dir
+

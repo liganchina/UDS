@@ -1,0 +1,7 @@
+K 13
+svn:externals
+V 184
+-r 436 http://10.10.10.59/svn/ModelBasedDesign/NAG_NAP_F151M/trunk/APSA/APSA_model APSA_model
+-r 343 http://10.10.10.59/svn/ModelBasedDesign/NAG_NAP_F151M/trunk/APSA/APSA_doc APSA_doc
+
+END

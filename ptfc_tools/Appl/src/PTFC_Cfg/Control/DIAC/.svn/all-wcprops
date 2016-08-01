@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Control/DIAC
+END
+DIAC_cfgIf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MSM_952/!svn/ver/503/trunk/Appl/src/PTFC_Cfg/Control/DIAC/DIAC_cfgIf.h
+END
+DIAC_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Control/DIAC/DIAC_config.h
+END
+DIAC_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Control/DIAC/DIAC_config.c
+END

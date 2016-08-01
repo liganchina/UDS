@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Control/DOVFC
+END
+DOVFC_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Cfg/Control/DOVFC/DOVFC_config.h
+END
+DOVFC_cfgIf.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/MSM_952/!svn/ver/3/trunk/Appl/src/PTFC_Cfg/Control/DOVFC/DOVFC_cfgIf.h
+END
+DOVFC_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Control/DOVFC/DOVFC_config.c
+END

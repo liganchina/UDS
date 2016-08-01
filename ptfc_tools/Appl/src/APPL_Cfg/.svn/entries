@@ -1,0 +1,92 @@
+10
+
+dir
+563
+http://10.10.10.59/svn/MSM_952/trunk/Appl/src/APPL_Cfg
+http://10.10.10.59/svn/MSM_952
+
+
+
+2016-07-22T10:38:30.422599Z
+561
+fzanchetta
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ee6efbb1-8d80-4383-846b-ed621e9da208
+
+APPL_cfg.h
+file
+
+
+
+
+2016-07-21T13:35:20.571000Z
+c10129db663aa8b067d7d80d3dd8e362
+2015-10-27T10:52:05.163370Z
+335
+dcloralio
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+548
+
+DISPA
+dir
+
+EXMMA
+dir
+
+FANA
+dir
+
+HEATA
+dir
+
+KEYA
+dir
+
+NWMA
+dir
+
+SSMA
+dir
+
+UDSA
+dir
+
+VF607
+dir
+
+VF608
+dir
+

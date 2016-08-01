@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Presentation/DDMP
+END
+DDMP_config.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/MSM_952/!svn/ver/561/trunk/Appl/src/PTFC_Cfg/Presentation/DDMP/DDMP_config.c
+END
+DDMP_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/MSM_952/!svn/ver/276/trunk/Appl/src/PTFC_Cfg/Presentation/DDMP/DDMP_config.h
+END
+DDMP_cbk.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/MSM_952/!svn/ver/124/trunk/Appl/src/PTFC_Cfg/Presentation/DDMP/DDMP_cbk.h
+END
+DDMP_cfgIf.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/MSM_952/!svn/ver/503/trunk/Appl/src/PTFC_Cfg/Presentation/DDMP/DDMP_cfgIf.h
+END

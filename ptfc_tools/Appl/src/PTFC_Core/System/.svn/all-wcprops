@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/MSM_952/!svn/ver/419/trunk/Appl/src/PTFC_Core/System
+END
+SYSM_typedefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/System/SYSM_typedefs.h
+END
+SYSM.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MSM_952/!svn/ver/338/trunk/Appl/src/PTFC_Core/System/SYSM.c
+END
+SYSM_if.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/MSM_952/!svn/ver/338/trunk/Appl/src/PTFC_Core/System/SYSM_if.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/MSM_952/!svn/ver/335/trunk/Appl/src/PTFC_Core/System/main.c
+END
+jmptable.asm
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/MSM_952/!svn/ver/2/trunk/Appl/src/PTFC_Core/System/jmptable.asm
+END

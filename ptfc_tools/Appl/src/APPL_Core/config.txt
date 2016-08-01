@@ -1,0 +1,76 @@
+                            Definizioni attive a livello di IAR Embedded Workbench IDE
+
+
+------------------------   Opzioni di configurazione interna/test:
+
+ANALOG_CONVERSION_10BIT: abilita gestione AD a 10bit (default: 8 bit)
+CSI_1: specifica che EEPROM e UJA1061 sono collegati su CSI_1 (default: connessione su CSI_0)
+
+DEBUG_EEPROM: esegue ciclo di test per driver EEPROM
+INSTRUMENT_CODE: attiva macro TEST_POINT_ON()/TEST_POINT_OFF() per toggle su port per misura tempi/test.
+EEPROM_CLEAR: genera eseguibile con mappa EEPROM alterata (forzatura errore di CRC) per i test con EEPROM vergine.
+
+DEBUG_F9EF: invia info aggiuntive sui difetti interni PDPC
+DEBUG_SDF_RESET: invia causa di reset HW e SW nella trama VERSION. tm265: forzatura per test intervento watchdog SWRD_Test 6.10.
+
+DISABLE_SW_WATCHDOG: disabilita watchdog SW per prove SDF
+
+OVERLOAD_CPU: attiva funzione di overload CPU per stress test (% extra carico CPU definita da OVERLOAD_CPU_PERCENT).
+IDLE_CPU: mette la CPU in IDLE per misurare il carico CPU. Utile anche in versione di produzione (risparmio energetico CPU) ?
+
+DEBUG_ENDURE: trasmette su trama VERSION i dati di endure per verifica gestione contatore di max scritture in EEPROM.
+                Riduce il num. di write da 500K a 2 per verifica rapida del meccanismo di cambio pagina.
+DEBUG_CAN_MSG: definisce alcuni buffer CAN di TX/RX da usare per gestione informazioni di debug.
+
+
+NO_MIRROR: prova misura tempi esecuzione senza mirror delle variabili critiche.
+NO_RAM_MEMORY_TEST, NO_FLASH_MEMORY_TEST: non esegue i test della memoria.
+NO_STACK_MONITOR: non esegue il controllo dello stack (utile solo in fase di debug).
+
+
+DEBUG_CAN_RX: test code per verifica driver CAN dopo modifica tm338.
+
+EEPROM_FAILURE: forzatura per provare guasto (interruzione) chip select EEPROM. tm317
+
+
+CSI_TRANSFER_16_BIT: abilita trasferimento dati CSI a 16 bit.
+CPU_16_BIT: CPU 16-bit word size
+ON_CHIP_DEBUG: abilita funzione on-chip debug (option byte).
+
+DEBUG_RESET: abilita trasmissione di msg can per monitorare variabili interne
+
+
+
+
+
+-------------------------- Opzioni per compilare con target emulator/debug
+Debug:
+SIMULATOR: compila per simulatore (mai usato). Le attese bloccanti legate all' HW (es. partenza oscillatore) vengono saltate.
+QB_78K0RFG3: compila per target hardware QB-78K0RFG3-TB (Target Board di NEC).
+
+DEBUG:  compila con codice aggiunto per debug generale (on-chip o emulatore).
+
+
+-------------------------- Opzioni da usare per generare le diverse versioni di prodotto
+
+Release:
+
+Le versioni prodotto si definiscono tramite define (vedi global.h) da inserire in IDE: project/options/compiler/preprocessor.
+
+HARDWARE_1: abilita compilazione per HW_A
+HARDWARE_2: abilita compilazione per HW_B
+HARDWARE_3: abilita compilazione per HW_C
+
+
+X1_CLOCK_FAILURE: gestione restart con clock interno 8 MHz a fronte di errore clock esterno (clock recovery mode).
+X1_CLOCK_8_MHZ: clock esterno a 8 MHz, altrimenti il clock esterno è a 16MHz (default).
+X1_CLOCK_20_MHZ: clock esterno a 20 MHz.
+
+PLL_ON: attiva gestione PLL x3, possibile solo se X1_CLOCK_8_MHZ definito oppure
+                                               se clock interno 8 MHz attivo (a fronte di X1_CLOCK_FAILURE).-> fCLK = 24 MHz.
+
+CSI_MULTI_DEVICE: opzione di compilazione da usare per gestire diversi device CSI/SPI collegati allo stesso bus.
+
+
+
+vedi define forzate in global.h
